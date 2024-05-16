@@ -21,8 +21,13 @@ if (itIsPalindroma(userString) == true){
 
 // > Esercizio Pari e Darispari 
 
-const userChoice = prompt("Choose even or odd");
-let userNumberChoice = Number.parseInt(prompt("Type a number from 1 to 5 "));
+let userChoice = prompt("Inserisci pari o dispari");
+if (userChoice !== "pari" && userChoice !== "dispari"){
+    userChoice = "pari";
+}
+console.log("L'utente ha scelto : ", userChoice)
+
+    let userNumberChoice = Number.parseInt(prompt("Type a number from 1 to 5 "));
 if (Number.isNaN(userNumberChoice) == true  || userNumberChoice > 5){
     let random = Math.floor(Math.random() * 5 ) + 1;
     userNumberChoice = random;
@@ -36,4 +41,21 @@ function computerRandomNum(){
 
 let pcNumber = computerRandomNum();
 
-console.log(pcNumber)
+let sommaGame = userNumberChoice + pcNumber;
+
+console.log(sommaGame , userNumberChoice , pcNumber);
+
+function itIsEvenOdd(somma){
+    if(somma % 2 === 0){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+if (itIsEvenOdd(sommaGame) === true){
+    console.log("Ha vinto chi ha scelto PARI!");
+}
+else {
+    console.log("Ha vinto chi ha scelto DISPARI!");
+    }
