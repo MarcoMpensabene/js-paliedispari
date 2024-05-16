@@ -27,3 +27,13 @@ if (Number.isNaN(userNumberChoice) == true  || userNumberChoice > 5){
     let random = Math.floor(Math.random() * 5 ) + 1;
     userNumberChoice = random;
 }
+
+function computerRandomNum(){
+    let randomPcNum = Math.floor(Math.random() * 5 ) + 1;
+    return randomPcNum;
+
+}
+
+let pcNumber = computerRandomNum();
+
+console.log(pcNumber)
