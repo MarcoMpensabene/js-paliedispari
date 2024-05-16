@@ -43,7 +43,7 @@ let pcNumber = computerRandomNum();
 
 let sommaGame = userNumberChoice + pcNumber;
 
-console.log(sommaGame , userNumberChoice , pcNumber);
+// console.log(sommaGame , userNumberChoice , pcNumber);
 
 function itIsEvenOdd(somma){
     if(somma % 2 === 0){
