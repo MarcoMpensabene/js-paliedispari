@@ -13,11 +13,17 @@ function itIsPalindroma(string){
         return false;
     }
 }
-
-
-
 if (itIsPalindroma(userString) == true){
     console.log("La parola è Palindroma");
 } else {
     console.log("la parola non è Palindroma");
+}
+
+// > Esercizio Pari e Darispari 
+
+const userChoice = prompt("Choose even or odd");
+let userNumberChoice = Number.parseInt(prompt("Type a number from 1 to 5 "));
+if (Number.isNaN(userNumberChoice) == true  || userNumberChoice > 5){
+    let random = Math.floor(Math.random() * 5 ) + 1;
+    userNumberChoice = random;
 }
