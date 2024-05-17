@@ -24,6 +24,7 @@ if (itIsPalindroma(userString) == true){
 let userChoice = prompt("Inserisci pari o dispari").trim().toLowerCase();
 if (userChoice !== "pari" && userChoice !== "dispari"){
     userChoice = "pari";
+    // ! PREFERIBILE USARE UN WHILE PER IL CONTROLLO COSì DA POTER FAR RE-INSERIRE I VALORI ALL'UTENTE INVECE DI FORZARLI .
 }
 console.log("L'utente ha scelto : ", userChoice)
 
@@ -31,6 +32,7 @@ console.log("L'utente ha scelto : ", userChoice)
 if (Number.isNaN(userNumberChoice) == true  || userNumberChoice > 5 || userNumberChoice < 1){
     let random = Math.floor(Math.random() * 5 ) + 1;
     userNumberChoice = random;
+    // ! PREFERIBILE USARE UN WHILE PER IL CONTROLLO COSì DA POTER FAR RE-INSERIRE I VALORI ALL'UTENTE INVECE DI FORZARLI .
 }
 
 function computerRandomNum(){
