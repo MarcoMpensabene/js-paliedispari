@@ -1,6 +1,6 @@
 // > Esercizio Palindroma
 
-let userString = prompt("Inserisci una stringa");
+let userString = prompt("Inserisci una stringa").toLocaleLowerCase().trim();
 
 function itIsPalindroma(string){
     let reverse = "";
