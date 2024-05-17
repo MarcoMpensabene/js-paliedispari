@@ -1,6 +1,6 @@
 // > Esercizio Palindroma
 
-let userString = prompt("Inserisci una stringa").toLocaleLowerCase().trim();
+let userString = prompt("Inserisci una stringa").toLowerCase().trim();
 
 function itIsPalindroma(string){
     let reverse = "";
@@ -21,7 +21,7 @@ if (itIsPalindroma(userString) == true){
 
 // > Esercizio Pari e Darispari 
 
-let userChoice = prompt("Inserisci pari o dispari");
+let userChoice = prompt("Inserisci pari o dispari").trim().toLowerCase();
 if (userChoice !== "pari" && userChoice !== "dispari"){
     userChoice = "pari";
 }
