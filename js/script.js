@@ -28,7 +28,7 @@ if (userChoice !== "pari" && userChoice !== "dispari"){
 console.log("L'utente ha scelto : ", userChoice)
 
     let userNumberChoice = Number.parseInt(prompt("Type a number from 1 to 5 "));
-if (Number.isNaN(userNumberChoice) == true  || userNumberChoice > 5){
+if (Number.isNaN(userNumberChoice) == true  || userNumberChoice > 5 || userNumberChoice < 1){
     let random = Math.floor(Math.random() * 5 ) + 1;
     userNumberChoice = random;
 }
